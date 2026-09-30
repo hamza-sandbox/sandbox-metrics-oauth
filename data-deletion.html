@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sandbox Metrics — Data deletion</title>
+<style>body{font-family:Arial,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:#222;line-height:1.55}h2{margin-top:28px}</style></head><body>
+<h1>Sandbox Metrics — User data deletion</h1>
+<p>Sandbox Metrics is an internal Google Sheets add-on used only by the members of the Sandbox agency (Google Workspace domain sandbox.ma). It reads advertising reporting data from the ad accounts a member connects and writes it into that member's Google Sheets.</p>
+<h2>What we store</h2>
+<ul><li>The Meta access token of the member who connected Meta, stored in that member's own Apps Script user properties (inside their Google account). It is never shared with other users and never sent to any server other than Meta's Graph API.</li>
+<li>The name of the connected Facebook profile, displayed in the add-on.</li>
+<li>No Meta data is stored anywhere else: reporting figures are written only in the Google Sheets chosen by the member.</li></ul>
+<h2>How to delete your data</h2>
+<ol><li>In Google Sheets, open Extensions &gt; Sandbox Metrics &gt; Open Sandbox Metrics.</li>
+<li>Go to the Sources tab and click <b>Disconnect</b> on Meta Ads. The access token and profile name are deleted immediately.</li>
+<li>Optionally, remove the app from your Facebook account: Facebook Settings &gt; Security and login &gt; Business integrations (or Apps and websites) &gt; Sandbox Metrics &gt; Remove.</li>
+<li>Reporting data already written in your spreadsheets can be deleted like any other cell content.</li></ol>
+<p>You can also ask us to delete your data by email: <a href="mailto:hamza@sandbox.ma">hamza@sandbox.ma</a>. Requests are handled within 7 days.</p>
+<hr><h2>Suppression des données (FR)</h2>
+<p>Dans Google Sheets : Extensions &gt; Sandbox Metrics &gt; Ouvrir, onglet Sources, bouton <b>Déconnecter</b> sur Meta Ads : le jeton et le nom du profil sont supprimés immédiatement. Vous pouvez aussi retirer l'app depuis les paramètres Facebook (Intégrations professionnelles) ou écrire à hamza@sandbox.ma.</p>
+<p>Last updated: September 30, 2026.</p>
+</body></html>
