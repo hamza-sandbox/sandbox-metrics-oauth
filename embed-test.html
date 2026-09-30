@@ -7,7 +7,7 @@
 var base='https://script.google.com/a/macros/sandbox.ma/s/AKfycbzDARCnnx3GpReU-G-qNuttceo16OKlVhiwcwqqB6fwWTK-C-mPTcXdn3b7fXaMaQTD/exec';
 var p=new URLSearchParams(location.search);
 var u=base+'?ss='+(p.get('ss')||'')+'&authuser='+encodeURIComponent(p.get('authuser')||'')+'&embed=1';
-document.getElementById('f').src=u;
+var f=document.getElementById('f');if(p.get('h'))f.style.height=p.get('h')+'px';if(p.get('w'))f.style.width=p.get('w')+'px';f.src=u;
 document.getElementById('f').onload=function(){document.getElementById('s').textContent='iframe onload fired '+new Date().toISOString();};
 </script>
 </body></html>
