@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Embed test</title>
+<style>html,body{margin:0;height:100%}iframe{border:1px solid #999;width:360px;height:90vh}</style></head>
+<body>
+<p id="s">embed test</p>
+<iframe id="f" allow="clipboard-write"></iframe>
+<script>
+var base='https://script.google.com/a/macros/sandbox.ma/s/AKfycbzDARCnnx3GpReU-G-qNuttceo16OKlVhiwcwqqB6fwWTK-C-mPTcXdn3b7fXaMaQTD/exec';
+var p=new URLSearchParams(location.search);
+var u=base+'?ss='+(p.get('ss')||'')+'&authuser='+encodeURIComponent(p.get('authuser')||'')+'&embed=1';
+document.getElementById('f').src=u;
+document.getElementById('f').onload=function(){document.getElementById('s').textContent='iframe onload fired '+new Date().toISOString();};
+</script>
+</body></html>
